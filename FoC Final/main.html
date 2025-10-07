@@ -15,11 +15,11 @@
 <body>
 <div class="main container-fluid">
     <div class="banner container-fluid">
-        <h1>Project</h1>
+        <h1>Fundamentals of Computing</h1>
     </div>
 
 <div class="buttons container-fluid mt-1">
-    <button type="button" class="btn btn-course" onclick="window.location.href='index\.html'">Course</button>
+    <button type="button" class="btn btn-course" onclick="window.location.href='index.html'">Course</button>
     <button type="button" class="btn btn-project" onclick="window.location.href='project.html'">Project</button>
     <button type="button" class="btn btn-concepts" onclick="window.location.href='concepts.html'">Concepts</button>
     <button type="button" class="btn btn-databases" onclick="window.location.href='databases.html'">Databases</button>
@@ -27,22 +27,39 @@
     <button type="button" class="btn btn-dev" onclick="window.location.href='dev.html'">Dev Team</button>
 </div>
     
-    <div class="project container-fluid mt-1">
-	<article>
-    <h1>Project</h1>
-    <p>The final project will consist of 4 sections. Each section has a deadline to complete. A complete description of the project can be found on the course moodle site. It will consist of launching a website built with, html, css, and javascript and hosted on github. This site is a benchmark for the Final Project. See
-	Project Specification on Moodle Site.</p>
+    <div class="body container-fluid mt-1">
+        <div class="leftDiv">  
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="assets/img1.jpg" alt="Slide 1">
+                </div>
 
-	<ul>
-	  <li><a href="https://kryanbz.github.io/FoC/notgate.html" style="color:white">Project 1: NOT Gate</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/andgate.html" style="color:white">Project 2: AND Gate</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/easyand.html" style="color:white">Project 2: AND Gate -easy version</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/binarytohex.html" style="color:white">Project 3: Binary to Hexidecimal Converter</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/ascii.html" style="color:white">Project 4: ASCII Converter</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/unicode.html" style="color:white">Project 4: UNICODE Converter</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/MLinstructions.html" style="color:white">Project 5: Machine Language Instructions Converter</a></li>
-	</ul>  
-       
+                <div class="slide">
+                    <img src="assets/img2.jpg" alt="Slide 2">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img3.jpg" alt="Slide 3">
+                </div>
+
+                <button class="slide-nav prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slide-nav next" onclick="changeSlide(1)">❯</button>
+
+                <div class="dots-container">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightDiv"> 
+            <p class="homepg"> 
+                This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science. <br>
+                The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: the computer architecture; <br>
+                operating systems and computer networks; software and software development; data organization and visualization; and the potential of computing machines. 
+            </p> 
+        </div>
     </div>
     
     <div class="lower_banner container-fluid">
