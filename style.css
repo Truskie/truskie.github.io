@@ -196,8 +196,9 @@ body, html {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slide-number {
@@ -275,4 +276,47 @@ body, html {
     width: 80%; 
 	backdrop-filter: blur(5px);
     box-sizing: border-box; 
+}
+
+.powerPoint{
+	justify-content: center;
+	padding-top: 0px;
+	padding-right: 100px;
+    display: flex;
+    flex: 1;
+	position: relative;
+}
+
+.dataBases{
+	justify-content: center;
+	padding-top: 0px;
+	text-align: center;
+    display: flex;
+    flex: 1;
+	position: relative;
+}
+
+.homepg img{
+	display: block;
+	margin: 0 auto;
+}
+.docDiv{
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	text-align: center;
+    display: flex;
+    flex: 1;
+	position: relative;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
