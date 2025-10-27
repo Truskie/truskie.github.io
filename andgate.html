@@ -147,19 +147,19 @@
 			const statusIndicator = document.getElementById('statusIndicator');
 			
 			if (inputA && inputB) {
-				andGate.src = "assets/and2on.PNG";
+				andGate.src = "assets/and2on.png";
 				statusIndicator.textContent = "Output: ON (1) - Both inputs active";
 				statusIndicator.className = "status-indicator status-on";
 			} else if (inputA && !inputB) {
-				andGate.src = "assets/and1on.PNG";
+				andGate.src = "assets/and1on.png";
 				statusIndicator.textContent = "Output: OFF (0) - Only Input A active";
 				statusIndicator.className = "status-indicator status-single";
 			} else if (!inputA && inputB) {
-				andGate.src = "assets/and1on2.PNG";
+				andGate.src = "assets/and1on2.png";
 				statusIndicator.textContent = "Output: OFF (0) - Only Input B active";
 				statusIndicator.className = "status-indicator status-single";
 			} else {
-				andGate.src = "assets/and2off.PNG";
+				andGate.src = "assets/and2off.png";
 				statusIndicator.textContent = "Output: OFF (0) - No inputs active";
 				statusIndicator.className = "status-indicator status-off";
 			}
@@ -185,3 +185,4 @@
 </body>
 
 </html>
+
