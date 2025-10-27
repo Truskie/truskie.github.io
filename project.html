@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="style.css">
-    <title>
-        Project
-    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
 </head>
 
 <body>
-<div class="main container-fluid">
-    <div class="banner container-fluid">
-        <h1>Project</h1>
+    <div class="main container-fluid">
+        <div class="banner container-fluid">
+            <h1>Project</h1>
+        </div>
+
+        <div class="buttons container-fluid mt-1">
+            <button type="button" class="btn btn-course" onclick="window.location.href='index.html'">Course</button>
+            <button type="button" class="btn btn-project" onclick="window.location.href='project.html'">Project</button>
+            <button type="button" class="btn btn-concepts" onclick="window.location.href='concepts.html'">Concepts</button>
+            <button type="button" class="btn btn-databases" onclick="window.location.href='databases.html'">Databases</button>
+            <button type="button" class="btn btn-documentation" onclick="window.location.href='documentation.html'">Documentation</button>
+            <button type="button" class="btn btn-dev" onclick="window.location.href='dev.html'">Dev Team</button>
+        </div>
+        
+        <div class="project container-fluid mt-1">
+            <div class="projects-container">
+                <h1 class="text-center mb-4">Projects</h1>
+				
+				<div class="projects-description mt-5">
+                    <h3 class="text-center mb-3">About These Projects</h3>
+                    <p class="text-center">
+                        Presented here are 6 projects that relate to topics discussed this semester. Each project's page is built using fundamental concepts and code from languages learnt throughout the semester
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <h2>1</h2>
+                        </div>
+                        <h3>NOT Gate</h3>
+                        <p>Digital logic gate simulation that inverts the input signal</p>
+                        <a href="notgate.html" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <h2>2</h2>
+                        </div>
+                        <h3>AND Gate</h3>
+                        <p>Digital logic gate that outputs true only when both inputs are true</p>
+                        <a href="andgate.html" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <h2>3</h2>
+                        </div>
+                        <h3>Binary to Hexadecimal</h3>
+                        <p>Converter tool for translating binary numbers to hexadecimal format</p>
+                        <a href="binarytohex.html" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <h2>4</h2>
+                        </div>
+                        <h3>ASCII Converter</h3>
+                        <p>Tool for converting between characters and ASCII codes</p>
+                        <a href="asciiconverter.html" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <h2>5</h2>
+                        </div>
+                        <h3>UNICODE Converter</h3>
+                        <p>Converter for translating characters to UNICODE values</p>
+                        <a href="unicodeconverter.html" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <h2>6</h2>
+                        </div>
+                        <h3>Machine Language Instructions</h3>
+                        <p>Converter for machine language instructions and assembly code</p>
+                        <a href="machinelanguage.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="lower_banner container-fluid">
+            <h1> ©University Of Belize </h1>
+        </div>
     </div>
-
-<div class="buttons container-fluid mt-1">
-    <button type="button" class="btn btn-course" onclick="window.location.href='index.html'">Course</button>
-    <button type="button" class="btn btn-project" onclick="window.location.href='project.html'">Project</button>
-    <button type="button" class="btn btn-concepts" onclick="window.location.href='concepts.html'">Concepts</button>
-    <button type="button" class="btn btn-databases" onclick="window.location.href='databases.html'">Databases</button>
-    <button type="button" class="btn btn-documentation" onclick="window.location.href='documentation.html'">Documentation</button>
-    <button type="button" class="btn btn-dev" onclick="window.location.href='dev.html'">Dev Team</button>
-</div>
-    
-    <div class="project container-fluid mt-1">
-	<article>
-    <h1>Project</h1>
-    <p>The final project will consist of 4 sections. Each section has a deadline to complete. A complete description of the project can be found on the course moodle site. It will consist of launching a website built with, html, css, and javascript and hosted on github. This site is a benchmark for the Final Project. See
-	Project Specification on Moodle Site.</p>
-
-	<ul>
-	  <li><a href="https://kryanbz.github.io/FoC/notgate.html" style="color:white">Project 1: NOT Gate</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/andgate.html" style="color:white">Project 2: AND Gate</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/easyand.html" style="color:white">Project 2: AND Gate -easy version</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/binarytohex.html" style="color:white">Project 3: Binary to Hexidecimal Converter</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/ascii.html" style="color:white">Project 4: ASCII Converter</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/unicode.html" style="color:white">Project 4: UNICODE Converter</a></li>
-	  <li><a href="https://kryanbz.github.io/FoC/MLinstructions.html" style="color:white">Project 5: Machine Language Instructions Converter</a></li>
-	</ul>  
-       
-    </div>
-    
-    <div class="lower_banner container-fluid">
-        <h1> ©University Of Belize </h1>
-    </div>
-</div>
-
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-
-showSlide(currentSlide);
-
-function changeSlide(direction) {
-    currentSlide += direction;
-    
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    } else if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    }
-    
-    showSlide(currentSlide);
-}
-
-function goToSlide(n) {
-    currentSlide = n;
-    showSlide(currentSlide);
-}
-
-function showSlide(n) {
-    slides.forEach(slide => {
-        slide.classList.remove('active');
-    });
-
-    dots.forEach(dot => {
-        dot.classList.remove('active');
-    });
-
-    slides[n].classList.add('active');
-    dots[n].classList.add('active');
-}
-
-setInterval(() => {
-    changeSlide(1);
-}, 4000);
-</script>
 </body>
 </html>
