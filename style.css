@@ -1515,7 +1515,7 @@ body, html {
     margin-top: 20px;
 }
 
-.btn-map-game, .btn-resume {
+.btn-map-game, .btn-resume. .btn-git{
     background-color: #ffc107;
     border: 2px solid #ffc107;
     color: black;
@@ -1526,7 +1526,7 @@ body, html {
     min-width: 150px;
 }
 
-.btn-map-game:hover, .btn-resume:hover {
+.btn-map-game:hover, .btn-resume:hover, .btn-git:hover{
     background-color: #e0a800;
     border-color: #e0a800;
     transform: translateY(-2px);
@@ -1539,7 +1539,7 @@ body, html {
         align-items: center;
     }
     
-    .btn-map-game, .btn-resume {
+    .btn-map-game, .btn-resume, .btn-git{
         width: 100%;
         max-width: 250px;
     }
@@ -1593,4 +1593,5 @@ body, html {
     .english-image {
         height: 200px;
     }
+
 }
